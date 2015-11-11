@@ -1,0 +1,42 @@
+.radio-btn-group>input {
+	display: none;
+}
+
+.radio-btn-group>label {
+	cursor: pointer;
+	border-radius: 2px;
+	width: 64px;
+	height: 30px;
+	padding: 0;
+	color: white;
+	background-color: rgba(255,255,255,0.25);
+	border: 1px solid white;
+	display: inline-block;
+	float: left;
+	text-align: center;
+    line-height: 33px;
+}
+
+.radio-btn-group>.radio-btn:first-of-type:not(:last-of-type ) {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.radio-btn-group>.radio-btn:not(:first-of-type ):not(:last-of-type ) {
+	border-radius: 0;
+}
+
+.radio-btn-group>.radio-btn:last-of-type:not(:first-of-type ) {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.clear-this:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.radio-btn-group .active{
+	background-color: rgba(130,173,54,0.25);
+}
