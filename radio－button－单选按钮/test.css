@@ -40,3 +40,8 @@
 .radio-btn-group .active{
 	background-color: rgba(130,173,54,0.25);
 }
+/* for ie-8 
+.radio-btn-group .active {
+    background-color: rgb(130, 173, 54);
+}
+*/
