@@ -1,0 +1,24 @@
+* {
+color: white !important;
+background-color:  black !important;
+}
+
+/*一个字体图标*/
+	/* http://fortawesome.github.io/Font-Awesome/  */
+	@font-face {
+	    font-family: 'FontAwesome';
+	    src: url('../fonts/fontawesome-webfont.eot');
+	    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome-webfont.svg') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	.fa {
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale
+	}
+	
+/*图标字体 比较大的 : SIMPLE LINE ICONS*/

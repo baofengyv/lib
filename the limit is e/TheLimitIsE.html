@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript">
+	var e=Math.E;
+	function x(){
+	   var delta=0;
+	   var r=0;
+	   for(var n=0;n<100;++n){
+	      r=Math.pow((1+1/n),n);
+	      delta= r - e;
+	      console.log(n,"::",delta);
+	   }            
+        }
+	function start(){
+	   x();	
+	}
+    </script>
+    <style type="text/css">
+        .image-overlay {
+            position:absolute;
+            opacity: 0;
+            left: -5px;
+            top: 0px;
+            overflow: hidden;
+            display: block;
+            height: 244px;
+            width: 312px;
+            background-color:#eee;
+        }
+    </style>
+
+</head>
+<body>
+
+    The limit of (1+1/n)^n is e.
+    To see the result from console(press F12). 
+<button onclick="start();">Start</button>
+</body>
+</html>

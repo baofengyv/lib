@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        function x() {
+           // $(".image - overlay");
+        }
+    </script>
+    <style type="text/css">
+		.colContainer {
+			margin: 0px 70px;
+			position: relative;
+		}
+		.colContainer:after {
+			content: "";
+			clear: both;
+			display: block;			
+		/*由于:after显示为inline元素 在这里将其显示为block 相当于在这里用一个clear：both 的 div 替代*/
+		}
+		.col {
+			position: relative;
+			/*设成 border-box后 下面指定的33.3%的宽度为包括边框的宽度*/
+			box-sizing: border-box;
+			width: 33.3%;
+			min-height:300px;
+			float: left;
+			background: #f8f6f6;
+			border: 1px solid white;
+			text-align: center;
+			text-decoration: none;
+		}
+		.col h3 {
+			text-transform: uppercase;
+		}
+		.blue{
+			border-top: 1px solid #008ad0;
+			width: 30px;
+			margin: auto;
+		}
+		.description {
+			padding: 0 55px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.link-button {
+			width: 70%;
+			margin: 0 15%;
+			position: absolute;
+			bottom: 0px;
+			background: #cc3300;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.7em;
+			color: white;
+			/*已定义的贝塞尔曲线 进行过渡*/
+			transition: background-color 300ms cubic-bezier(0.23, 1, 0.32, 1), border-color 300ms cubic-bezier(0.23, 1, 0.32, 1), color 300ms cubic-bezier(0.23, 1, 0.32, 1);
+		}
+		.col:hover .art-inner {
+			-webkit-transform: scale(0.97, 0.97);
+			-moz-transform: scale(0.97, 0.97);
+			-ms-transform: scale(0.97, 0.97);
+			-o-transform: scale(0.97, 0.97);
+			transform: scale(0.97, 0.97);
+		}
+		.col:hover .icon-circle{
+			-webkit-transform: scale(1.05, 1.05);
+			-moz-transform: scale(1.05, 1.05);
+			-ms-transform: scale(1.05, 1.05);
+			-o-transform: scale(1.05, 1.05);
+			transform: scale(1.05, 1.05);
+		}
+		.col:hover .link-button {
+			background: #992600;
+		}
+		.art-inner{
+			display: block;
+			height: 166px;
+			width: 166px;
+			background-image: url('sprites-s613c82b56f.png');
+			background-repeat: no-repeat;
+			-webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+			margin:auto;
+			position: absolute;
+			z-index: 100;
+		}
+		.icon-circle{
+			position: absolute;
+			top: 19px;
+			display: block;
+			height: 176px;
+			width: 176px;
+			margin: auto;
+			z-index: 1;
+			margin: -5px -5px -5px -5px;
+			background-color: white;
+			border-radius: 88px;
+			-webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			-moz-transition: -moz-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			-o-transition: -o-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+		}
+		.art-inner1{
+			background-position: 0 -304px;
+		}
+		.art-inner2{
+			background-position: 0 -490px;
+		}
+		.art-inner3{
+			background-position: 0 0px;
+		}
+		.circle-outer{
+			display: block;
+			padding-top: 19px;
+			height: 166px;
+			width: 166px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="colContainer">
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner1"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner2"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner3"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+	</div>
+</body>
+</html>

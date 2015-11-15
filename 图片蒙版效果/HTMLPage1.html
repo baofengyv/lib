@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>实现图片蒙版效果</title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript">
+	$(function () {
+		$(".imageCover").mouseenter(function () {
+			//console.log("in");
+			$(this).animate({opacity:0.85}, {duration:300});
+		});
+
+		$(".imageCover").mouseleave(function () {
+			//console.log("out");
+			$(this).animate({opacity: 0.05 }, { duration: 300 });
+		});
+	});
+	</script>
+    <style type="text/css">
+	.imageCover {
+		position: absolute;
+		opacity: 0;
+		left: -5px;
+		top: 0px;
+		overflow: hidden;
+		display: block;
+		height: 244px;
+		width: 312px;
+		background-color: #eee;
+	}
+    </style>
+</head>
+<body>
+    <div style="position: relative">
+        <a href="x" title="title" class="">
+            <img width="302" height="244" src="./x.jpg" class="" alt="dash-iphone2" />
+            <span class="imageCover"><span class="imageCoverInside">ssss</span></span>
+        </a>
+    </div>
+</body>
+</html>

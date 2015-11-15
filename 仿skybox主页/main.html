@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript">
+        function x() {
+            $(".image - overlay");
+        }
+    </script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        .logo {
+            float: left;
+            margin: 15px 0 0 25px;
+            display: block;
+            position: relative;
+            text-indent: -119988px;
+            overflow: hidden;
+            text-align: left;
+            height: 46px;
+            width: 115px;
+            background-image: url('./sprites-s613c82b56f.png');
+            background-position: 0 -676px;
+            background-repeat: no-repeat;
+        }
+        
+        #header {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            min-height: 72px;
+            background: white;
+            z-index: 800;
+            margin: 0;
+            top: 0;
+            -webkit-box-shadow: 0 1px 2px rgba(64, 67, 80, 0.5);
+            -moz-box-shadow: 0 1px 2px rgba(64, 67, 80, 0.5);
+            box-shadow: 0 1px 2px rgba(64, 67, 80, 0.5);
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        
+        #header:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        
+        #header nav .menu {
+            float: right;
+            margin: 15px 20px 0 0;
+        }
+        #header nav .menu a {
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            zoom: 1;
+            margin: 0 10px;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 15px 15px 23px;
+            text-decoration: none;
+        }
+        .mobile-nav-overlap {
+            width: 100%;
+            min-height: 72px;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        
+        .product-nav {
+            position: relative;
+            padding: 77px;
+            height: 445px;
+            max-width: 1024px;
+            margin: auto;
+        }
+        .col {
+            border: 1px solid white;
+            color: #555;
+            display: block;
+            float: left;
+            width: 33%;
+            text-align: center;
+            text-decoration: none;
+            background: #f8f6f6;
+        }
+        .product-nav .art {
+            position: relative;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 200px;
+            margin: auto;
+        }
+        .product-nav .circle-outer {
+            position: absolute;
+            font-size: 180px;
+            left: -90px;
+            color: #f8f6f6;
+            padding-top: 6px;
+            -webkit-transition: color 600ms ease;
+            -moz-transition: color 600ms ease;
+            -o-transition: color 600ms ease;
+            transition: color 600ms ease;
+        }
+        .product-nav .art.access .art-inner {
+            height: 166px;
+            width: 166px;
+            background-image: url('./sprites-s613c82b56f.png');
+            background-position: 0 -304px;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            -webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+            -moz-transition: -moz-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+            -o-transition: -o-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+            transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .art2 {
+            position: relative;
+            height: 200px;
+        }
+        
+        .art22 {
+            /* position: relative; */
+            background-image: url('./sprites-s613c82b56f.png');
+            background-position: 0 -304px;
+            background-repeat: no-repeat;
+            height: 168px;
+            width: 174px;
+            margin: auto;
+            top: 100px;
+            margin-top: 30px;
+        }
+        .colContainer {
+			margin: 0px 70px;
+			position: relative;
+			margin-top: 100px;
+		}
+		.colContainer:after {
+			content: "";
+			clear: both;
+			display: block;			
+		/*由于:after显示为inline元素 在这里将其显示为block 相当于在这里用一个clear：both 的 div 替代*/
+		}
+		.col {
+			position: relative;
+			/*设成 border-box后 下面指定的33.3%的宽度为包括边框的宽度*/
+			box-sizing: border-box;
+			width: 33.3%;
+			min-height:300px;
+			float: left;
+			background: #f8f6f6;
+			border: 1px solid white;
+			text-align: center;
+			text-decoration: none;
+		}
+		.col h3 {
+			text-transform: uppercase;
+		}
+		.blue{
+			border-top: 1px solid #008ad0;
+			width: 30px;
+			margin: auto;
+		}
+		.description {
+			padding: 0 55px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.link-button {
+			width: 70%;
+			margin: 0 15%;
+			position: absolute;
+			bottom: 0px;
+			background: #cc3300;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.7em;
+			color: white;
+			/*已定义的贝塞尔曲线 进行过渡*/
+			transition: background-color 300ms cubic-bezier(0.23, 1, 0.32, 1), border-color 300ms cubic-bezier(0.23, 1, 0.32, 1), color 300ms cubic-bezier(0.23, 1, 0.32, 1);
+		}
+		.col:hover .art-inner {
+			-webkit-transform: scale(0.97, 0.97);
+			-moz-transform: scale(0.97, 0.97);
+			-ms-transform: scale(0.97, 0.97);
+			-o-transform: scale(0.97, 0.97);
+			transform: scale(0.97, 0.97);
+		}
+		.col:hover .icon-circle{
+			-webkit-transform: scale(1.05, 1.05);
+			-moz-transform: scale(1.05, 1.05);
+			-ms-transform: scale(1.05, 1.05);
+			-o-transform: scale(1.05, 1.05);
+			transform: scale(1.05, 1.05);
+		}
+		.col:hover .link-button {
+			background: #992600;
+		}
+		.art-inner{
+			display: block;
+			height: 166px;
+			width: 166px;
+			background-image: url('sprites-s613c82b56f.png');
+			background-repeat: no-repeat;
+			-webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+			margin:auto;
+			position: absolute;
+			z-index: 100;
+		}
+		.icon-circle{
+			position: absolute;
+			top: 19px;
+			display: block;
+			height: 176px;
+			width: 176px;
+			margin: auto;
+			z-index: 1;
+			margin: -5px -5px -5px -5px;
+			background-color: white;
+			border-radius: 88px;
+			-webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			-moz-transition: -moz-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			-o-transition: -o-transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+			transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1), color 500ms ease;
+		}
+		.art-inner1{
+			background-position: 0 -304px;
+		}
+		.art-inner2{
+			background-position: 0 -490px;
+		}
+		.art-inner3{
+			background-position: 0 0px;
+		}
+		.circle-outer{
+			display: block;
+			padding-top: 19px;
+			height: 166px;
+			width: 166px;
+			margin: auto;
+		}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav class="nav">
+			<a href="http://www.skyboximaging.com/" title="Home" class="logo">Skybox Imaging</a>
+			<div class="menu">
+				<a href="http://www.skyboximaging.com/products" class="">Products</a>
+				<a href="http://www.skyboximaging.com/company" class="">Company</a>
+				<a href="http://www.skyboximaging.com/technology" class="">Technology</a>
+				<a href="http://www.skyboximaging.com/contact" class="">Contact</a>
+			</div>
+		</nav>
+    </div>
+    <div class="mobile-nav-overlap">ccccccccccccccccc</div>
+	<div class="colContainer">
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner1"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner2"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+		<a href="http://localhost" class="col">
+			<div>
+				<i class="circle-outer">
+					<i class="art-inner art-inner3"></i>
+					<i class="icon-circle"></i>
+				</i>
+			</div>
+			<h3>Access</h3>
+			<div class="blue"></div>
+			<div class="description">Directly task our satellite constellation through a local SkyNode system and a data plan. </div>
+			<div class="link-button"><i class="icon-arrow-thin"></i>Learn More</div>
+		</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+md5("The quick brown fox jumps over the lazy cog")
+"1055D3E6 98D289F2 AF866372 5127BD4B"
+
+md5("The quick brown fox jumps over the lazy dog")
+"9E107D9D 372BB682 6BD81D35 42A419D6"
+
+MD5 ("") = 	
+d41d8cd9 8f00b204 e9800998 ecf8427e
+
+MD5 ("a") = 
+0cc175b9 c0f1b6a8 31c399e2 69772661
+
+MD5 ("abc") = 
+90015098 3cd24fb0 d6963f7d 28e17f72
+
+MD5 ("message digest") = 
+f96b697d 7cb7938d 525a2f31 aaf161d0
+
+MD5 ("abcdefghijklmnopqrstuvwxyz") = 
+c3fcd3d7 6192e400 7dfb496c ca67e13b
+
+MD5 ("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789") =
+d174ab98 d277d9f5 a5611c2c 9f419d9f
+
+MD5 ("12345678901234567890123456789012345678901234567890123456789012345678901234567890") = 
+57edf4a2 2be3c955 ac49da2e 2107b67a
