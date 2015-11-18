@@ -117,6 +117,8 @@
 				$this.unbind('inview'); //执行一遍后解除绑定
 			}
     	});
+        //手动触发一下
+        $(window).trigger("ready");
     });
 //@bfy 添加  <--
 })(jQuery);
