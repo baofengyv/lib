@@ -22,3 +22,13 @@ background-color:  black !important;
 	}
 	
 /*图标字体 比较大的 : SIMPLE LINE ICONS*/
+
+
+/*@待整理  随滚动滑动的背景图片*/
+http://demo2.jlvextension.com/probusiness/
+    padding: 100px 0;
+    background-image: url(/probusiness/images/pro/parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;

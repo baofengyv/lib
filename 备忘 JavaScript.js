@@ -156,3 +156,21 @@
 	2 用鼠标触发hover事件让元素显示
 	3 按<F8>暂停脚本执行
 	4 移开鼠标后脚本将暂停
+／／
+You need to save a reference to the context where the setTimeout function call is made, because setTimeout executes the function with this pointing to the global object:
+
+var that = this;
+if (this.options.destroyOnHide) {
+     setTimeout(function(){that.tip.destroy()}, 1000);
+} 
+You can easily prove that setTimeout set this to the global object by:
+
+(function () {
+  alert(this); // alerts hello
+  setTimeout(function(){
+    alert(this == window); // true
+  }, 1000);
+}).call("hello");
+See also:
+
+setTimeout - The 'this' problem
