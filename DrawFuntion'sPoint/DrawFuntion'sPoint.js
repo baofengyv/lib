@@ -59,7 +59,29 @@ function compute( T /*图像的放大倍数*/){
 }
 
 
+function go(T /*图像的放大倍数*/){
+		T = T || 1;
+	//给这个函数起个短的别名
 
+	var x,y;
+    var N =10;
+    var a=[0];
+    var b;
+    for (var i = 1; i < N; i++) {
+      b=[];
+      for (var x in a) {
+        b.push(a[x]+1);
+        b.push(a[x]-1);
+      }
+      a=b;
+      console.log(a.reduce(function (x,y){return Math.abs(x)+Math.abs(y);})/Math.pow(2,i));
+      x=i;
+      y=T*a.reduce(function (x,y){return Math.abs(x)+Math.abs(y);})/Math.pow(2,i);
+      drawPoint(x,y);
+      console.log(x+"||"+y);
+    }
+
+}
 
 
 
