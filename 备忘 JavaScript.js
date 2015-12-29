@@ -174,3 +174,41 @@ You can easily prove that setTimeout set this to the global object by:
 See also:
 
 setTimeout - The 'this' problem
+
+
+/**
+ 关于闭包
+**/
+function go(){
+	for(var i=0;i<10;++i){
+		setTimeout(function(){
+			console.log(i);     //这里执行时是引用的外部的变量i
+		},1000);
+	}
+}
+
+function goClosure(){
+	for(var i=0;i<10;++i){
+		setTimeout(fn(i) //执行函数fn时，就像把i的值传进去，创建一个新的类似对象的fn
+						 //这个对象中包含了i的值
+						 //循环调用十次fn，就像创建了十个新的对象（包含着各自的i）
+						 //！！注意每次调用函数就像创建了一个新的对象
+			,1000);
+	}
+}
+function fn(i){
+	return function(){
+		console.log(i);
+	}
+}
+//换一种写法，定义一个匿名函数并立即执行
+function goClosureOr(){
+	for(var i=0;i<10;++i){
+		(function(_i){
+			setTimeout(function(){
+				console.log(_i);
+				console.log(i);
+			},1000);
+		})(i);
+	}
+}
