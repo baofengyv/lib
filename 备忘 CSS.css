@@ -32,3 +32,13 @@ http://demo2.jlvextension.com/probusiness/
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
+
+/** 给图片·视频指定这个宽度后就可以随viewport缩放，但又不会再viewport超过元素宽度后，造成元素的拉伸 **/
+	max-width:100%
+
+/*The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. 
+	指定用来计算其初始化大小  用来计算元素的初始布局位置
+*/
+	flex-basis:100%;
+	flex-basis:10em;  @详见moz dev 文档 https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+	
