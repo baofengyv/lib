@@ -106,14 +106,13 @@
 // morris.js  生成饼图 线图等时序图表
 
 //事件
-	//window的load 事件  window.onload
-    	//在文档的所有元素包括图片、CSS、JS等等 加载完成之后fire
+	//window的load 事件 
+    	//在文档的所有元素包括图片加载完成之后发生
     //DOMContentLoaded 事件
     	//文档加载解析完毕 且 所有延迟脚本都执行完毕后才发生
     //readystatechange 事件
     	//document.readyState属性随着文档加载过程而变
     	//会触发readystatechange事件
-		
 
 //事件处理
   	// 一个事件的发生后经历三个阶段

@@ -1,44 +1,47 @@
 * {
-color: white !important;
-background-color:  black !important;
+    color: white !important;
+    background-color: black !important;
 }
 
+
 /*一个字体图标*/
-	/* http://fortawesome.github.io/Font-Awesome/  */
-	@font-face {
-	    font-family: 'FontAwesome';
-	    src: url('../fonts/fontawesome-webfont.eot');
-	    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome-webfont.svg') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	.fa {
-	    display: inline-block;
-	    font: normal normal normal 14px/1 FontAwesome;
-	    font-size: inherit;
-	    text-rendering: auto;
-	    -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale
-	}
-	
+
+
+/* http://fortawesome.github.io/Font-Awesome/  */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
 /*图标字体 比较大的 : SIMPLE LINE ICONS*/
 
 
 /*@待整理  随滚动滑动的背景图片*/
-http://demo2.jlvextension.com/probusiness/
-    padding: 100px 0;
-    background-image: url(/probusiness/images/pro/parallax.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
 
-/** 给图片·视频指定这个宽度后就可以随viewport缩放，但又不会再viewport超过元素宽度后，造成元素的拉伸 **/
-	max-width:100%
+http: //demo2.jlvextension.com/probusiness/
+padding: 100px 0;
+background-image: url(/probusiness/images/pro/parallax.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: 50% 50%;
 
-/*The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item. 
-	指定用来计算其初始化大小  用来计算元素的初始布局位置
-*/
-	flex-basis:100%;
-	flex-basis:10em;  @详见moz dev 文档 https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
-	
+/*mask 的使用*/
+
+-webkit-mask: center no-repeat;
+-webkit-mask-image: url(images/apple.png);
+-webkit-mask-size: 24%;

@@ -1,0 +1,45 @@
+.reisTable {
+    width: 50%;
+    margin: auto;
+}
+
+.reisTable ul {
+    list-style: none;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 38px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.reisTable ul:not(:first-child):hover {
+    background: #F0F8FD;
+}
+
+.reisTable ul:first-child {
+    background: #f7f7f7;
+    border-radius: 2px;
+    border: 1px solid #d2d2d2;
+    color: #888;
+    height: 41px;
+    line-height: 41px;
+    overflow: hidden;
+}
+
+.reisTable ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.reisTable li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.reisTable > ul:first-child li:not(:last-child) {
+    border-right: 1px solid #e5e5e5;
+}
