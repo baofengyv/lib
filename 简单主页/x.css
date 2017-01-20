@@ -1,0 +1,35 @@
+
+		body {
+			background-color: #f0f0f0;
+			color: #777;
+		}
+		.container {
+			margin: 80px auto;
+			max-width: 400px;
+			padding: 100px 100px 10px;
+			background-color: #f9f9f9;
+		}
+		.logo {
+		height: 164px;
+			max-height: 100%;
+			max-width: 100%;
+		}
+		
+		.logoContainer{
+			text-align: center;
+		}
+		
+		.lable{
+			margin-top: 23px;
+			color: #bbb;
+			text-align: center;
+		}
+		.content{
+			margin-top: 77px;
+			margin-bottom: 44px;
+		}
+
+		td {
+			height: 30px;
+			width: 45px;
+		}
